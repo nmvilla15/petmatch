@@ -4,18 +4,19 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import TinderCards from "./components/TinderCards/TinderCards";
 import SwipeButtons from "./components/SwipeButtons/SwipeButtons";
+import Likes from "./components/Likes/Likes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
         <Switch>
-          {/* change chats to favorites? */}
-          <Route path="/chats">
-            <h1>I am the chat page</h1>
+          <Route path="/Likes">
+            <Header backButton="/" />
+            <Likes />
           </Route>
-          <Route path="/">
+          <Route path="/matches">
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </Route>
