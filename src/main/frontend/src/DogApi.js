@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-function PetInsurance() {
+function DogApi() {
   let [dogImage, setDogImage] = useState(null);
 
   // 3. Create out useEffect function
   useEffect(() => {
-    fetch("https://dog.ceo/api/breeds/image/random/24")
+    fetch("https://dog.ceo/api/breeds/image/random/5")
       .then((response) => response.json())
       // 4. Setting *dogImage* to the image url that we received from the response above
       .then((data) => setDogImage(data.message));
@@ -22,4 +22,4 @@ function PetInsurance() {
   );
 }
 
-export default PetInsurance;
+export default DogApi;

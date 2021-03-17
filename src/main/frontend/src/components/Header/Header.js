@@ -23,7 +23,7 @@ function Header({ backButton }) {
         </IconButton>
       )}
 
-      <Link to="/">
+      <Link to="/dogs">
         <img className="header__logo" src={logo} alt="woofer logo with dog" />
       </Link>
 

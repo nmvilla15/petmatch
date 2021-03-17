@@ -7,13 +7,13 @@ function Chats() {
     <div className="chats">
       <Chat
         name="Lexi"
-        message="I'm a fancy girl looking for a quite home. I love to cuddle and eat peanut butter."
+        message="I'm a fancy girl looking for a quiet home. I love to cuddle and eat peanut butter."
         timestamp="6 mins ago"
         profilePic="https://images.unsplash.com/photo-1608096299210-db7e38487075?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk1fHxkb2dzfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
       />
       <Chat
         name="Charlie"
-        message="I a very sweet fella, but a little skiddish. I've had a ruff life and am looking for a nice family to call my own."
+        message="I'm a very sweet fella, but a little skiddish. I've had a ruff life and am looking for a nice family to call my own."
         timestamp="1 hr ago"
         profilePic="https://images.unsplash.com/photo-1544913021-e6bf406a86fb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODN8fGRvZ3N8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
       />
