@@ -27,7 +27,7 @@ function Header({ backButton }) {
         <img className="header__logo" src={logo} alt="woofer logo with dog" />
       </Link>
 
-      <Link to="/Likes">
+      <Link to="/chat">
         <IconButton>
           <FavoriteIcon className="header__icon" fontSize="large" />
         </IconButton>
