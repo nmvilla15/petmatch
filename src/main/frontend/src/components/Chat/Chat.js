@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Chat.css";
 
+// this shows the images on chat
 function Chat({ name, message, timestamp, profilePic }) {
   return (
     <Link to={`/chat/${name}`}>

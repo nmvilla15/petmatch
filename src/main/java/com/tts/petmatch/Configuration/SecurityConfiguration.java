@@ -28,17 +28,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
-			.authorizeRequests()
-				.antMatchers("/cart").authenticated()
-				.antMatchers("/charge").authenticated()
+			    .authorizeRequests()
 				.and().formLogin()
-				.loginPage("/signin").permitAll()
-				.loginProcessingUrl("/login").permitAll()
+				.loginPage("/").permitAll()
+				.loginProcessingUrl("/").permitAll()
+				.defaultSuccessUrl("/", true)				
 				.and().logout()
 				.logoutRequestMatcher(new AntPathRequestMatcher("/signout"))
 				.logoutSuccessUrl("/");
 	}
-
 	@Override
     public void configure(WebSecurity web) throws Exception {
         web

@@ -17,4 +17,9 @@ UserService userService;
 	public String main() {
 		return "main";
 	}
+
+	@GetMapping("/about")
+		public String about() {
+			return "about";
+		}
 }

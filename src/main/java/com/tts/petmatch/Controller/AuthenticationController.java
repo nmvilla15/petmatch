@@ -32,6 +32,8 @@ import com.tts.petmatch.Model.User;
 			if (submit.equals("up")) {
 				if (userService.findByUsername(user.getUsername()) ==null) {
 					userService.saveNew(user);
+					System.out.println(user);
+					return "main";
 				} else {
 					bindingResult.rejectValue("username", "error.user", "Username is already taken.");
 					return "signin";
